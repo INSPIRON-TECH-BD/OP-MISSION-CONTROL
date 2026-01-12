@@ -5,8 +5,8 @@
  */
 
 import React from 'react';
-import { ShieldCheck, Zap, BarChart3, Copy, Download } from 'lucide-react';
-import { InspironLogo } from '@/components/Branding/Logo'; // Your master SVG component
+import { ShieldCheck, Zap, BarChart3, Copy, Download, ExternalLink, MousePointer2 } from 'lucide-react';
+import { InspironLogo } from '@/components/Branding/Logo';
 
 const BRAND_COLORS = [
     { name: 'Oxford Navy', hex: '#002147', usage: 'Foundation & Trust', text: 'text-white' },
@@ -15,148 +15,146 @@ const BRAND_COLORS = [
     { name: 'Pure White', hex: '#FDFDFD', usage: 'Data Clarity', text: 'text-navy' },
 ];
 
-export default function BrandManual() {
+export default function BrandManualPage() {
     return (
-        <div className="min-h-screen bg-[#010409] text-white font-sans selection:bg-aqua selection:text-navy">
-
-            {/* 1. HERO: THE INSTITUTIONAL MISSION */}
-            <section className="border-b border-white/10 py-24 px-6 bg-gradient-to-b from-[#002147]/20 to-transparent">
-                <div className="max-w-6xl mx-auto">
-                    <span className="text-aqua font-bold tracking-[0.4em] uppercase text-xs">Operational Manual v1.0</span>
-                    <h1 className="text-6xl md:text-8xl font-black mt-4 mb-8 tracking-tighter uppercase">
-                        Stabilizing <br /> <span className="text-[#fc0]">Financial Gravity.</span>
-                    </h1>
-                    <p className="max-w-2xl text-xl text-gray-400 leading-relaxed">
-                        INSPIRON TECH BD is an institutional engineering firm led by MD ABU HASAN.
-                        We replace manual chaos with 0.1% error-tolerant automation for 100+ Crore enterprises.
-                    </p>
+        <div className="space-y-32">
+            {/* 1. MISSION LOGIC */}
+            <section id="mission">
+                <div className="flex items-center gap-3 text-aqua mb-6">
+                    <Zap size={20} />
+                    <span className="text-xs font-black uppercase tracking-[0.3em]">Operational Directive</span>
+                </div>
+                <h1 className="text-5xl font-black mb-8 tracking-tighter uppercase leading-none">Mission Logic</h1>
+                <p className="text-xl text-gray-400 border-l-4 border-aqua pl-8 italic mb-12 max-w-2xl leading-relaxed">
+                    "Stabilizing financial gravity for high-scale aquaculture and industrial operations via custom logic migration."
+                </p>
+                <div className="p-8 bg-[#002147]/20 border border-aqua/10 rounded-2xl">
+                    <h4 className="text-aqua font-bold uppercase text-[10px] tracking-widest mb-4">Primary Strategic Objective</h4>
+                    <p className="text-base text-gray-300">Achieve <span className="text-white font-bold">0.1% error tolerance</span> across 10,000+ monthly transactions for clients with BDT 100 Crore+ turnover. Every byte of data must be recoverable and auditable.</p>
                 </div>
             </section>
 
-            {/* 2. LOGO ENGINEERING: GEOMETRIC PRECISION */}
-            <section className="py-24 px-6 border-b border-white/10">
-                <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-                    <div>
-                        <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
-                            <ShieldCheck className="text-aqua" /> Logo Engineering
-                        </h2>
-                        <div className="space-y-6 text-gray-400">
-                            <p>The Inspiron logo is a mathematical construct. It utilizes an 8px grid system to ensure perfect scaling across all digital nodes.</p>
-                            <ul className="space-y-4">
-                                <li className="flex gap-4">
-                                    <span className="text-aqua font-bold">01.</span>
-                                    <span><strong>The Aqua Engine:</strong> Represents the fluid logic of our custom Meta API integrations.</span>
-                                </li>
-                                <li className="flex gap-4">
-                                    <span className="text-[#fc0] font-bold">02.</span>
-                                    <span><strong>The Gold ROI Node:</strong> Positioned at the pinnacle to symbolize capital recovery (৳25L+).</span>
-                                </li>
-                            </ul>
-                        </div>
+            {/* 2. THE n-LAW STANDARD */}
+            <section id="n-law">
+                <div className="flex items-center justify-between border-b border-[#30363d] pb-4 mb-10">
+                    <h2 className="text-2xl font-black uppercase tracking-widest">The n-Law Standards</h2>
+                    <span className="text-[10px] font-mono text-gray-500">ISO-9001 Alignment Ready</span>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-8 font-mono text-xs">
+                    <div className="p-6 bg-black rounded-xl border border-[#30363d] group hover:border-gold transition-colors">
+                        <p className="text-gold mb-3 font-bold opacity-80">// RULE 01: ZERO APPROXIMATION</p>
+                        <p className="text-gray-400 leading-relaxed">All transaction data must be verified against field delivery challans. No manual entry is permitted without secondary systematic audit. Discrepancies &gt; 0.01% trigger immediate re-verification.</p>
                     </div>
-                    <div className="bg-[#002147] p-12 rounded-2xl border border-white/5 shadow-2xl">
-                        <InspironLogo className="w-full h-auto drop-shadow-3xl" />
+                    <div className="p-6 bg-black rounded-xl border border-[#30363d] group hover:border-aqua transition-colors">
+                        <p className="text-aqua mb-3 font-bold opacity-80">// RULE 02: PURE VECTORING</p>
+                        <p className="text-gray-400 leading-relaxed">The INSPIRON brand icon must never be exported in raster formats (JPEG/PNG) for institutional assets. 1:1 SVG precision is required to maintain architectural integrity at infinity scaling.</p>
+                    </div>
+                    <div className="p-6 bg-black rounded-xl border border-[#30363d] group hover:border-white transition-colors">
+                        <p className="text-white mb-3 font-bold opacity-80">// RULE 03: NO SILICONE SOLUTIONS</p>
+                        <p className="text-gray-400 leading-relaxed">Software must not be "bought." It must be "engineered." Every line of logic in MISSION CONTROL must serve a specific operational ROI metric.</p>
+                    </div>
+                    <div className="p-6 bg-black rounded-xl border border-[#30363d] group hover:border-gray-500 transition-colors">
+                        <p className="text-gray-500 mb-3 font-bold opacity-80">// RULE 04: PERSISTENT AUDIT</p>
+                        <p className="text-gray-400 leading-relaxed">Every automated workflow must include a persistent logging node. If a system fails, the root cause must be identifiable within 120 seconds of detection.</p>
                     </div>
                 </div>
             </section>
 
-            {/* 3. COLOR LAB: CLICK-TO-COPY INTERFACE */}
-            <section className="py-24 px-6 bg-white/[0.02]">
-                <div className="max-w-6xl mx-auto">
-                    <h2 className="text-3xl font-bold mb-12 flex items-center gap-3">
-                        <Zap className="text-[#fc0]" /> Visual Engineering Palette
-                    </h2>
-                    <div className="grid md:grid-cols-4 gap-6">
-                        {BRAND_COLORS.map((color) => (
-                            <div key={color.hex} className="group relative">
-                                <div
-                                    className="h-48 rounded-xl flex items-end p-6 transition-transform group-hover:scale-[1.02] shadow-xl"
-                                    style={{ backgroundColor: color.hex }}
-                                >
-                                    <button className="absolute top-4 right-4 p-2 bg-black/20 rounded-full opacity-0 group-hover:opacity-100 transition">
-                                        <Copy size={16} />
-                                    </button>
-                                    <div>
-                                        <p className={`font-bold uppercase tracking-widest text-xs ${color.text} opacity-60`}>{color.name}</p>
-                                        <p className={`font-black text-xl ${color.text}`}>{color.hex}</p>
-                                    </div>
+            {/* 3. COLOR LAB: CLICK-TO-COPY */}
+            <section id="colors">
+                <div className="flex items-center justify-between border-b border-[#30363d] pb-4 mb-10">
+                    <h2 className="text-2xl font-black uppercase tracking-widest">Visual Engineering Palette</h2>
+                    <div className="flex items-center gap-2 text-aqua">
+                        <MousePointer2 size={14} className="animate-bounce" />
+                        <span className="text-[10px] font-bold uppercase tracking-widest">Click to Copy</span>
+                    </div>
+                </div>
+
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    {BRAND_COLORS.map((color) => (
+                        <div key={color.hex} className="group cursor-pointer">
+                            <button
+                                onClick={() => navigator.clipboard.writeText(color.hex)}
+                                className="w-full h-40 rounded-xl flex items-end p-6 transition-all group-hover:scale-[1.05] group-hover:-translate-y-1 shadow-2xl relative overflow-hidden"
+                                style={{ backgroundColor: color.hex }}
+                            >
+                                <div className="absolute top-4 right-4 p-2 bg-black/20 rounded-full opacity-0 group-hover:opacity-100 transition backdrop-blur-sm">
+                                    <Copy size={16} />
                                 </div>
-                                <p className="mt-4 text-xs text-gray-500 uppercase tracking-widest font-bold">{color.usage}</p>
-                            </div>
-                        ))}
-                    </div>
+                                <div className="relative z-10 text-left">
+                                    <p className={`font-black text-lg ${color.text} leading-none mb-1`}>{color.hex.toUpperCase()}</p>
+                                    <p className={`font-bold uppercase tracking-widest text-[9px] ${color.text} opacity-60`}>{color.name}</p>
+                                </div>
+                            </button>
+                            <p className="mt-4 text-[10px] text-gray-500 uppercase tracking-widest font-black group-hover:text-aqua transition-colors">{color.usage}</p>
+                        </div>
+                    ))}
                 </div>
             </section>
 
-            {/* 4. THE EVIDENCE ENGINE: NOBIN AGRO CASE STUDY */}
-            <section className="py-24 px-6">
-                <div className="max-w-6xl mx-auto bg-gradient-to-r from-aqua/10 to-transparent p-12 rounded-3xl border border-aqua/20">
-                    <div className="flex flex-wrap justify-between items-end gap-6">
-                        <div>
-                            <h2 className="text-4xl font-black uppercase tracking-tighter mb-4">The Proof of Precision</h2>
-                            <p className="text-gray-400 max-w-lg italic">"Recovered ৳25 Lakhs+ in annual capital leakage through logic migration for 29 active ponds."</p>
-                        </div>
-                        <div className="flex gap-8 text-center">
-                            <div><p className="text-3xl font-black text-aqua">14,478</p><p className="text-[10px] uppercase font-bold text-gray-500">Transactions</p></div>
-                            <div><p className="text-3xl font-black text-[#fc0]">0.0%</p><p className="text-[10px] uppercase font-bold text-gray-500">Error Rate</p></div>
-                        </div>
-                    </div>
+            {/* 4. LOGO GEOMETRY */}
+            <section id="geometry">
+                <div className="flex items-center justify-between border-b border-[#30363d] pb-4 mb-10">
+                    <h2 className="text-2xl font-black uppercase tracking-widest">Logo Geometry</h2>
+                    <span className="text-[10px] font-mono text-gray-500">MATH_DRIVEN_IDENTITY</span>
                 </div>
-            </section>
 
-            {/* 5. VOICE & AUTHORITY: THE SYSTEMIC TONE */}
-            <section className="py-24 px-6 border-t border-white/10 bg-black/20">
-                <div className="max-w-6xl mx-auto">
-                    <h2 className="text-3xl font-bold mb-12 flex items-center gap-3 uppercase tracking-widest">
-                        Voice & Authority
-                    </h2>
-                    <div className="grid md:grid-cols-2 gap-12">
+                <div className="grid lg:grid-cols-2 gap-16 items-start">
+                    <div className="space-y-8 text-gray-400">
+                        <p className="leading-relaxed">The INSPIRON identity is a mathematical construct generated from path data extracted from v12.1 assets. It utilizes an <span className="text-white font-bold">8px sub-grid</span> for total alignment.</p>
+
                         <div className="space-y-6">
-                            <p className="text-gray-400 leading-relaxed font-medium">
-                                Our communication is direct, analytical, and authoritative. We do not speculate; we engineer.
-                            </p>
-                            <div className="bg-white/5 p-8 rounded-2xl border border-white/10 italic text-aqua font-mono text-sm leading-relaxed">
-                                "Never use 'I think.' Always use 'The data indicates' or 'The system requires.'"
+                            <div className="flex gap-4">
+                                <div className="h-2 w-2 rounded-full bg-aqua mt-2 shrink-0"></div>
+                                <div>
+                                    <p className="text-white font-bold text-sm mb-1 uppercase tracking-wider">The Aqua Engine</p>
+                                    <p className="text-xs">Recursive loops symbolizing the fluid data logic of Meta API and server-side tracking engines.</p>
+                                </div>
+                            </div>
+                            <div className="flex gap-4">
+                                <div className="h-2 w-2 rounded-full bg-gold mt-2 shrink-0"></div>
+                                <div>
+                                    <p className="text-white font-bold text-sm mb-1 uppercase tracking-wider">The ROI Node</p>
+                                    <p className="text-xs">The geometric center of gravity. Represents the precision-point where automation meets financial recovery.</p>
+                                </div>
                             </div>
                         </div>
-                        <div className="grid grid-cols-2 gap-4">
-                            <div className="p-6 border border-white/5 rounded-xl bg-white/5">
-                                <span className="block text-gold font-black text-[10px] uppercase mb-2 tracking-widest">Descriptor</span>
-                                <p className="text-sm font-bold">Authoritative</p>
-                            </div>
-                            <div className="p-6 border border-white/5 rounded-xl bg-white/5">
-                                <span className="block text-gold font-black text-[10px] uppercase mb-2 tracking-widest">Perspective</span>
-                                <p className="text-sm font-bold">Systemic</p>
-                            </div>
-                            <div className="p-6 border border-white/5 rounded-xl bg-white/5">
-                                <span className="block text-gold font-black text-[10px] uppercase mb-2 tracking-widest">Method</span>
-                                <p className="text-sm font-bold">Analytical</p>
-                            </div>
-                            <div className="p-6 border border-white/5 rounded-xl bg-white/5">
-                                <span className="block text-gold font-black text-[10px] uppercase mb-2 tracking-widest">Outcome</span>
-                                <p className="text-sm font-bold">Absolute</p>
-                            </div>
-                        </div>
+                    </div>
+                    <div className="bg-[#0b0e14] p-16 rounded-[32px] border border-[#30363d] shadow-2xl group flex items-center justify-center">
+                        <InspironLogo className="w-full h-auto drop-shadow-[0_0_40px_rgba(0,255,255,0.15)] group-hover:drop-shadow-[0_0_60px_rgba(0,255,255,0.25)] transition-all duration-500" />
                     </div>
                 </div>
             </section>
 
-            {/* 6. INTEGRATED TOOLS: v12.1 ASSET FACTORY */}
-            <section className="py-24 px-6 border-t border-white/10">
-                <div className="max-w-6xl mx-auto text-center">
-                    <h2 className="text-2xl font-bold mb-4 uppercase tracking-widest">Internal Command Tools</h2>
-                    <p className="text-gray-500 mb-12">The v12.1 Asset Factory is embedded here for authorized use by MD ABU HASAN.</p>
-                    <a href="/tools/factory" className="inline-flex items-center gap-3 bg-white text-navy font-black px-10 py-5 rounded-full hover:bg-aqua transition-all group">
-                        Open Strategic Content Engine <Download className="group-hover:translate-y-1 transition" />
-                    </a>
+            {/* 5. CONTENT ENGINE */}
+            <section id="factory" className="pt-32 border-t border-[#30363d]">
+                <div className="bg-gradient-to-br from-[#010409] to-[#002147]/40 p-12 md:p-20 rounded-[40px] border border-aqua/10 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-96 h-96 bg-aqua/5 blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
+
+                    <div className="relative z-10 max-w-2xl text-left">
+                        <div className="flex items-center gap-3 mb-8 bg-white/5 border border-white/10 w-fit px-4 py-2 rounded-full">
+                            <span className="h-2 w-2 rounded-full bg-green-500"></span>
+                            <span className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400">Node v12.1 Active</span>
+                        </div>
+
+                        <h2 className="text-5xl font-black uppercase tracking-tighter mb-8 leading-[0.9]">Institutional <br /><span className="text-gray-600">Asset Factory.</span></h2>
+
+                        <p className="text-lg text-gray-400 mb-12 font-medium leading-relaxed">
+                            Authorized operators can utilize the v12.1 Content Engine to generate precision-grade social and institutional assets with 0.0% geometric drift.
+                        </p>
+
+                        <a href="/tools/factory" className="inline-flex items-center gap-4 bg-white text-navy px-10 py-5 rounded-full font-black uppercase text-xs tracking-[0.2em] hover:bg-aqua transition-all group">
+                            Access Static Generator <ExternalLink size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                        </a>
+                    </div>
                 </div>
             </section>
 
             {/* FOOTER */}
-            <footer className="py-12 px-6 border-t border-white/5 text-center">
-                <p className="text-[10px] text-white/20 uppercase tracking-[1em]">MD ABU HASAN | INSPIRON TECH BD | Dhaka</p>
+            <footer className="pt-24 pb-12 text-center opacity-30">
+                <p className="text-[10px] font-mono tracking-[1em] uppercase">© MD ABU HASAN | OP-MISSION-CONTROL | 2026</p>
             </footer>
         </div>
     );
 }
-
