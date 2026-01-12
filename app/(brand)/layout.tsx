@@ -7,11 +7,6 @@
 import React from 'react';
 import { InspironLogo } from '@/components/Branding/Logo';
 import { BookOpen, Shield, Palette, FileCode, Workflow } from 'lucide-react';
-import { Inter, Montserrat } from "next/font/google";
-import "../globals.css";
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const montserrat = Montserrat({ subsets: ["latin"], weight: ["900"], variable: "--font-montserrat" });
 
 const DOCS_NAV = [
     {
@@ -35,7 +30,7 @@ const DOCS_NAV = [
 
 export default function BrandLayout({ children }: { children: React.ReactNode }) {
     return (
-        <div className={`${inter.variable} ${montserrat.variable} flex min-h-screen bg-[#010409] text-[#e6edf3] font-sans`}>
+        <div className="flex min-h-screen bg-[#010409] text-[#e6edf3] font-sans">
             {/* 1. THE COMMAND SIDEBAR */}
             <aside className="w-72 border-r border-[#30363d] fixed h-screen bg-[#0d1117] overflow-y-auto hidden lg:block">
                 <div className="p-6 border-b border-[#30363d]">
