@@ -6,8 +6,9 @@ interface LogoProps {
 
 export const InspironLogo: React.FC<LogoProps & { size?: number }> = ({ className, size = 200 }) => (
     <div className={`relative group flex items-center justify-center ${className}`}>
-        {/* The Institutional Glow Ring */}
-        <div className="absolute inset-0 bg-aqua/20 blur-2xl rounded-full group-hover:bg-aqua/40 transition-all duration-500" />
+        {/* Institutional Glow Node */}
+        <div className="absolute -inset-2 bg-aqua/5 blur-xl rounded-full group-hover:bg-aqua/20 transition-all duration-700" />
+
         <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1064.5 230.5"

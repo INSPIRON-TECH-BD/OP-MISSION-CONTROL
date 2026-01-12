@@ -1,3 +1,10 @@
 {
-  "/(main)/page": "app/(main)/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/webhook/route": "app/api/webhook/route.js",
+  "/(main)/page": "app/(main)/page.js",
+  "/(main)/precision-audit/page": "app/(main)/precision-audit/page.js",
+  "/(main)/services/page": "app/(main)/services/page.js",
+  "/(brand)/brand-manual/page": "app/(brand)/brand-manual/page.js",
+  "/(brand)/tools/factory/page": "app/(brand)/tools/factory/page.js",
+  "/(legal)/privacy/page": "app/(legal)/privacy/page.js"
 }

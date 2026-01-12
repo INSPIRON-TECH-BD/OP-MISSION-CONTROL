@@ -7,10 +7,9 @@ const montserrat = Montserrat({ subsets: ["latin"], weight: ["900"], variable: "
 
 export const metadata: Metadata = {
     title: "INSPIRON TECH | Official Manager.io Partner Bangladesh",
-    description: "Institutional Cloud Accounting & Business Automation for 100+ Crore Enterprises.",
+    description: "Institutional Cloud Accounting & Business Automation for 100+ Crore Agro-Enterprises.",
     icons: {
         icon: "/favicon.ico",
-        apple: "/apple-touch-icon.png",
     },
 };
 

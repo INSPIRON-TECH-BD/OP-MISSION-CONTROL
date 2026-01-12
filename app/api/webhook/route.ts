@@ -82,19 +82,45 @@ export async function POST(req: NextRequest) {
  */
 async function processLead(lead: { name: string, wa_id: string, text: string }, tier: string) {
     const timestamp = new Date().toISOString();
+    const PHONE_ID = '917810161405498';
+    const url = `https://graph.facebook.com/v21.0/${PHONE_ID}/messages`;
 
     if (tier === 'TIER_1_WHALE') {
-        // TRIGGER: Immediate notification for MD ABU HASAN
         console.log(`[${timestamp}] CRITICAL_WHALE_DETECTED: ${lead.name} (${lead.wa_id})`);
-        console.log(`Action: Trigger high-authority engineering meeting node.`);
-
-        // In production, this would trigger a Meta Cloud API POST to send a specific template
-        // Or integrate with a CRM/Notification service (e.g., Slack/Email)
     } else if (tier === 'TIER_2_SME') {
         console.log(`[${timestamp}] SME_LEAD_LOGGED: ${lead.name} (${lead.wa_id})`);
-        console.log(`Action: Queue for standard Reseller Roadmap delivery.`);
     } else {
         console.log(`[${timestamp}] MICRO_LEAD_LOGGED: ${lead.name} (${lead.wa_id})`);
-        console.log(`Action: Trigger generic self-service documentation node.`);
+    }
+
+    // Only trigger the welcome template for NEW leads
+    if (lead.text === 'start' || lead.text === 'technical audit') {
+        const payload = {
+            messaging_product: "whatsapp",
+            to: lead.wa_id,
+            type: "template",
+            template: {
+                name: "welcome_message_english",
+                language: { code: "en" },
+                components: [{
+                    type: "body",
+                    parameters: [{ type: "text", text: lead.name }]
+                }]
+            }
+        };
+
+        try {
+            await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${process.env.WHATSAPP_TOKEN}`
+                },
+                body: JSON.stringify(payload)
+            });
+            console.log(`TEMPLATE_SENT: welcome_message_english to ${lead.wa_id}`);
+        } catch (error) {
+            console.error('TEMPLATE_ERROR:', error);
+        }
     }
 }
