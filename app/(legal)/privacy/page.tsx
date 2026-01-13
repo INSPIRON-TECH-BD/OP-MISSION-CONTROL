@@ -27,11 +27,25 @@ export default function PrivacyPage() {
                             associated with our WhatsApp automation or accounting integrations, please follow these steps:
                         </p>
                         <ul className="list-decimal list-inside text-gray-400 text-sm space-y-2 font-mono">
-                            <li>Send an email to <span className="text-white">hello@inspiron.tech</span> with the subject "DATA DELETION REQUEST".</li>
+                            <li>Send an email to <span className="text-white">privacy@inspiron.tech</span> with the subject "DATA DELETION REQUEST".</li>
                             <li>Include your WhatsApp Phone ID (used for the Technical Audit).</li>
                             <li>Our system will purge your lead record and transaction logs within 24 hours.</li>
                             <li>You will receive a "Handshake Termination" confirmation once the purge is complete.</li>
                         </ul>
+
+                        <div className="bg-white/5 border border-white/10 p-6 rounded-lg mt-8">
+                            <h3 className="text-aqua font-bold uppercase text-xs tracking-widest mb-4">
+                                Official Data Controller
+                            </h3>
+                            <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                                For all data sovereignty inquiries or deletion requests, please contact our
+                                verified command node:
+                            </p>
+                            <div className="font-mono text-sm text-white">
+                                EMAIL: <span className="text-aqua underline">privacy@inspiron.tech</span><br />
+                                WABA: +880 1601-618030 (Institutional API Only)
+                            </div>
+                        </div>
                     </section>
 
                     <p className="pt-6 border-t border-white/5 text-[10px] text-gray-500 uppercase tracking-widest font-bold">
