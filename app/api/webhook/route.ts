@@ -25,7 +25,7 @@ export async function POST(req: NextRequest) {
     try {
         const payload = await req.json();
 
-        const value = payload.entry?.[0]?.changes?.[0]?.value;
+        const value = payload.entry?.[0]?.changes?.[0]?.value || payload.value;
         const message = value?.messages?.[0];
         const contact = value?.contacts?.[0];
 
@@ -42,6 +42,11 @@ export async function POST(req: NextRequest) {
             if (isWhale) {
                 console.log(`[WHALE DETECTED] Triggering Handshake for ${leadName}`);
                 await sendTemplateResponse(leadPhone, leadName);
+
+                // PHASE 4: TRIGGER INTERNAL ALERT TO MD ABU HASAN
+                const MY_PERSONAL_NUMBER = "8801719300849";
+                console.log(`[ALERT] Sending Whale Alert to ${MY_PERSONAL_NUMBER}`);
+                await sendInternalWhaleAlert(MY_PERSONAL_NUMBER, leadName, leadPhone, leadText);
             }
         }
 
@@ -67,14 +72,14 @@ async function sendTemplateResponse(to: string, name: string) {
             to: to,
             type: "template",
             template: {
-                name: "welcome_message__english", // CORRECTED: DOUBLE UNDERSCORE
+                name: "welcome_message__english",
                 language: { code: "en" },
                 components: [{
                     type: "body",
                     parameters: [
                         {
                             type: "text",
-                            parameter_name: "customer_name", // CORRECTED: RESOLVES ERROR #100
+                            parameter_name: "customer_name",
                             text: name
                         }
                     ]
@@ -85,5 +90,30 @@ async function sendTemplateResponse(to: string, name: string) {
 
     const data = await response.json();
     console.log(`[HANDSHAKE_STATUS] Result for ${to}:`, JSON.stringify(data));
+    return data;
+}
+
+async function sendInternalWhaleAlert(to: string, clientName: string, clientPhone: string, text: string) {
+    const phoneId = process.env.PHONE_NUMBER_ID || '917810161405498';
+    const url = `https://graph.facebook.com/v21.0/${phoneId}/messages`;
+
+    const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+            'Authorization': `Bearer ${process.env.WHATSAPP_TOKEN}`,
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            messaging_product: "whatsapp",
+            to: to,
+            type: "text",
+            text: {
+                body: `🚨 INSPIRON WHALE ALERT\n\nClient: ${clientName}\nPhone: ${clientPhone}\nQuery: "${text}"\n\nAction: Engage immediately for BDT 9M Mission.`
+            }
+        }),
+    });
+
+    const data = await response.json();
+    console.log(`[INTERNAL_ALERT_STATUS] Result for MD Abu Hasan:`, JSON.stringify(data));
     return data;
 }
