@@ -48,8 +48,8 @@ export const InspironLogo: React.FC<LogoProps> = ({ className, size = 200 }) => 
         </div>
 
         <div className="flex items-baseline font-auth tracking-tighter select-none">
-            <span className="text-2xl font-black text-white uppercase tracking-[-0.05em]">
-                INSPIRON
+            <span className="text-2xl font-black text-white tracking-[-0.05em]">
+                inspiron
             </span>
             <span className="ml-1 text-2xl font-light text-aqua uppercase tracking-[0.1em]">
                 TECH

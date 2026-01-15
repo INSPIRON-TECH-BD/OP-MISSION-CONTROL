@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { ShieldCheck, MessageSquareCode, ArrowRight } from 'lucide-react';
+import { ShieldCheck, MessageSquareCode, ArrowRight, BadgeCheck } from 'lucide-react';
 import Link from 'next/link';
 
 export const InstitutionalHero = () => {
@@ -16,19 +16,37 @@ export const InstitutionalHero = () => {
             <div className="relative z-10 text-center max-w-5xl">
                 {/* Meta Verification Badge */}
                 {/* Meta Verification Badge */}
-                <div className="relative z-20 flex justify-center mb-10">
+                {/* Dual Authority Badges */}
+                <div className="relative z-20 flex flex-col md:flex-row gap-4 justify-center mb-10">
+
+                    {/* 1. Meta Verified (Aqua) */}
                     <div className="
                         inline-flex items-center gap-3 
                         px-5 py-2.5 rounded-full 
                         bg-aqua/5 border border-aqua/30 
                         backdrop-blur-xl
                         text-aqua text-[10px] font-black 
-                        uppercase tracking-[0.4em] 
+                        uppercase tracking-[0.3em] 
                         animate-pulse shadow-[0_0_20px_rgba(0,255,255,0.1)]
                     ">
                         <ShieldCheck size={14} className="text-aqua" />
-                        Meta Verified Developer ID: 1372121971105461
+                        Meta Verified: 1372121971105461
                     </div>
+
+                    {/* 2. Manager.io Partner (Gold) */}
+                    <div className="
+                        inline-flex items-center gap-3 
+                        px-5 py-2.5 rounded-full 
+                        bg-[#FFD700]/5 border border-[#FFD700]/30 
+                        backdrop-blur-xl
+                        text-[#FFD700] text-[10px] font-black 
+                        uppercase tracking-[0.3em] 
+                        shadow-[0_0_20px_rgba(255,215,0,0.1)]
+                    ">
+                        <BadgeCheck size={14} className="text-[#FFD700]" />
+                        Official Manager.io Partner
+                    </div>
+
                 </div>
 
                 <h1 className="text-6xl md:text-9xl font-black text-white uppercase tracking-tighter leading-[0.85] mb-8">

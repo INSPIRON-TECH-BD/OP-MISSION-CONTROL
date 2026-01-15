@@ -20,7 +20,7 @@ export default function LandingPage() {
                 <div className="hidden md:flex gap-10 text-[10px] font-black uppercase tracking-[0.3em] text-gray-400">
                     <Link href="/services" className="hover:text-aqua transition-colors">Services</Link>
                     <Link href="/precision-audit" className="hover:text-aqua transition-colors">Precision Audit</Link>
-                    <a href="https://www.upwork.com/freelancers/~011085e2a7cde3f437?viewMode=1" target="_blank" className="text-white hover:text-aqua transition-colors">Hire on Upwork</a>
+                    <a href="https://www.upwork.com/freelancers/~017693f06437586515" target="_blank" className="text-white hover:text-aqua transition-colors">Hire on Upwork</a>
                     <a href="https://wa.me/8801601618030" className="text-aqua border border-aqua/30 px-4 py-2 rounded-full hover:bg-aqua/10 transition-all">Initiate Audit</a>
                 </div>
             </nav>
@@ -52,6 +52,26 @@ export default function LandingPage() {
                 </div>
             </section>
 
+            {/* STABILIZED SIGNATURE NODE */}
+            <section className="min-h-[100px] py-12 border-t border-slate-800 bg-slate-900/50">
+                <div className="container mx-auto px-4 text-center">
+                    <p className="text-slate-400 italic font-light tracking-wide">
+                        "Architected by <span className="text-gold font-bold">MD ABU HASAN</span>. 14 Years of Operational Data."
+                    </p>
+                    <a
+                        href="https://www.upwork.com/freelancers/~011085e2a7cde3f437?viewMode=1"
+                        target="_blank"
+                        className="text-aqua text-sm hover:underline mt-2 inline-block"
+                    >
+                        Verify Top Rated Plus Status ↗
+                    </a>
+
+                    <div className="mt-8 flex justify-center gap-6 text-[10px] font-black uppercase tracking-widest text-slate-600">
+                        <Link href="/n-law" className="hover:text-aqua transition-colors">n-Law Standards</Link>
+                        <Link href="/services" className="hover:text-aqua transition-colors">Tactical Grid</Link>
+                    </div>
+                </div>
+            </section>
 
         </div>
     );
