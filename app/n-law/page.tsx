@@ -89,7 +89,7 @@ export default function NLawStandards() {
                         number="03"
                         title="No Silicone Solutions"
                         icon={<Code2 className="text-white" size={32} />}
-                        content="Software must not be 'bought.' It must be 'engineered.' Every line of logic in MISSION CONTROL must serve a specific operational ROI metric."
+                        content="We reject subscription-based dependency. Every implementation must be a sovereign asset owned by the client, built on open-source foundations with zero vendor lock-in."
                         color="border-white"
                     />
 
