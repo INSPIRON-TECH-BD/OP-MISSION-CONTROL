@@ -18,7 +18,7 @@ export const InspironIcon = ({ className = "", scale = 1 }) => (
 export const InspironLogo = ({ className = "", size = "280px" }: { className?: string, size?: string | number }) => (
   <div className={`relative inline-flex items-center gap-4 ${className}`} style={{ width: size, height: '80px' }}>
     <img
-      src="/brand_lockup.svg"
+      src="/icon.svg"
       alt="INSPIRON TECH"
       className="h-full w-auto object-contain scale-125 origin-left"
     />
