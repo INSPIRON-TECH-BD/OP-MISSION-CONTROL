@@ -25,10 +25,11 @@ The wordmark baseline must align perfectly with the **8px Grid Baseline** of the
 
 ---
 
-## 2. 🎨 VISUAL DNA (The Institutional Palette)
+## 2. 🎨 VISUAL DNA (The Sovereign Palette / Sentry Protocol)
 *   **OXFORD BLUE (#002147):** *The Foundation.* Symbolizes Depth, Trust, and the 14-Year Strategic Archive.
-*   **ELECTRIC AQUA (#00FFFF):** *The Innovation Flow.* Represents Digital Logic and Real-time Data Migration.
-*   **PRECISION GOLD (#FFD700 / #FC0):** *The ROI Node.* Represents the "TECH" suffix and the Value Recovered for the Client.
+*   **ELECTRIC CYAN (#00D2FF):** *The Technical Authority.* Replaces generic aqua with a distinct institutional signature.
+*   **PRECISION GOLD (#FFD700):** *The ROI Node.* Represents the "TECH" suffix. Tolerance: 0.0% (No #FC0 allowed).
+*   **DARK-BG (#010409):** *The Operational Depth.* Mandatory background for high-contrast dashboard environments.
 
 ---
 
