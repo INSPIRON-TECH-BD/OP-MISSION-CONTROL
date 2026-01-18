@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1200 800">
+  <!-- Generator: Adobe Illustrator 30.1.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 136)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2 {
+        fill: none;
+      }
+
+      .st3 {
+        mask: url(#mask);
+      }
+
+      .st4 {
+        opacity: .2;
+      }
+
+      .st4, .st5, .st6, .st7, .st8, .st9 {
+        isolation: isolate;
+      }
+
+      .st4, .st8, .st10 {
+        fill: aqua;
+      }
+
+      .st5 {
+        fill: #f0f;
+        font-size: 12px;
+      }
+
+      .st5, .st8, .st9 {
+        font-family: CourierNewPSMT, 'Courier New';
+      }
+
+      .st11 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 24px;
+      }
+
+      .st11, .st12 {
+        stroke: #000;
+      }
+
+      .st6 {
+        font-family: Helvetica-Bold, Helvetica;
+        font-weight: 700;
+      }
+
+      .st6, .st7 {
+        font-size: 110px;
+      }
+
+      .st6, .st13 {
+        fill: #fff;
+      }
+
+      .st7 {
+        font-family: Helvetica, Helvetica;
+      }
+
+      .st7, .st14, .st9 {
+        fill: gold;
+      }
+
+      .st8, .st9 {
+        font-size: 10px;
+      }
+
+      .st12 {
+        fill: #002147;
+        stroke-miterlimit: 10;
+        stroke-width: .7px;
+      }
+
+      .st1 {
+        stroke: #f0f;
+      }
+
+      .st2 {
+        stroke: gold;
+        stroke-dasharray: 5 5;
+      }
+    </style>
+    <mask id="mask" x="-917.2" y="-779.1" width="3000" height="3000" maskUnits="userSpaceOnUse">
+      <g id="PerfectGapMask">
+        <rect class="st13" x="-917.2" y="-779.1" width="3000" height="3000"/>
+        <path class="st11" d="M479.3,645.9h-1.3c-10.6-1-19.3-6.1-26-15.3-.3-.6-4.3-7.3-10-16.5-49.2-81.1-52.8-87.8-52.6-88.4,5.5-8.8,19.4-31.2,27.4-43.8,3.3-5.4,5.7-9,5.7-9.1s0-.3.3-.3h0s.3,0,.3.3c1.6,2.7,27.4,45.3,49.4,81.8,17,28.2,31.9,52.8,32.2,53.5,4.2,7,4.2,15.2,0,22.5-5.2,9-15.4,14.9-25.6,14.9h0l.4.3h-.2,0Z"/>
+      </g>
+    </mask>
+  </defs>
+  <rect class="st12" width="1200" height="800"/>
+  <path class="st0" d=""/>
+  <g id="Icon_Component">
+    <g class="st3">
+      <path class="st10" d="M154.6,458.9c-13.6,0-25.7-6.6-32.9-18.1-6.8-10.7-7.5-24.4-1.9-35.7,3.5-6.3,14.6-23.9,25.4-40.9,6.7-10.5,13-20.4,17.4-27.7,1.2-1.9,2.1-3.5,3.7-5.1,5.1-5.8,12.4-9.1,20.2-9.1s15,3.6,19.4,9.8c2.4,3.5,4,7.5,4.6,11.7.1,1.1-.2,2.1-.9,3.3-.8,1.5-9.7,15.3-9.7,15.3-.3.4-.5.8-.8,1.2-.6,1-1.1,1.9-1.7,1.9s-.5-.1-.8-.4c-1.9-2.2-3.6-5.1-5.3-8-1.1-1.8-2-3.5-3.1-5-.8-1.2-2.1-2-3.5-2s-1.9.4-2.6,1.3c-2.3,3.6-12.2,19.4-20.2,32.2-5.2,8.4-9.8,15.6-11.3,17.9-1,1.6-2.3,3.6-3.5,5.5-.7,1.2-1.5,2.4-2.1,3.5-.3.4-.6.9-.8,1.4-1.1,1.8-2,3.3-2.7,4.9-2.3,5.5-.2,12.1,4.8,15.3,2.4,1.6,5.1,2.4,7.8,2.4h0c5.4,0,11.1-3.4,14.6-8.9,2.4-3.6,10.5-16.4,19.9-31.3,14-22.3,30.1-47.6,33.7-52.6,2.8-3,6.4-4.8,10.1-4.8h.4c4.1,0,8.1,2.3,10.3,5.8,2.1,3.5,2.4,7.4.4,10.9-1.6,3.1-2.9,5-4.8,8-1.4,2.2-3.2,5-5.8,9.1-6.4,10-13.7,21.6-20.8,32.9-10.8,17.2-21.1,33.5-24.5,38.5-7.8,10.7-20.2,17.1-33.3,17.1h0v-.3h.2v-.2Z"/>
+    </g>
+    <path class="st10" d="M258.4,459.2h-.6c-4.7-.4-8.6-2.7-11.5-6.8-.1-.3-1.9-3.2-4.4-7.3-21.8-35.9-23.4-38.9-23.3-39.2,2.4-3.9,8.6-13.8,12.1-19.4,1.5-2.4,2.5-4,2.5-4s0-.1.1-.1h0s.1,0,.1.1c.7,1.2,12.1,20.1,21.9,36.2,7.5,12.5,14.1,23.4,14.3,23.7,1.9,3.1,1.9,6.7,0,10-2.3,4-6.8,6.6-11.3,6.6h.2c0,.1,0,.1,0,.1h0Z"/>
+    <circle class="st14" cx="254.4" cy="320.8" r="16.6"/>
+  </g>
+  <rect class="st4" x="304.3" y="270.9" width="44.3" height="233.7"/>
+  <text class="st8" transform="translate(322.8 430.9) rotate(-90)"><tspan x="0" y="0">20% SPACING (44.3px)</tspan></text>
+  <line class="st1" x1="82.8" y1="504.9" x2="882.8" y2="504.9"/>
+  <text class="st5" transform="translate(92.8 520.9)"><tspan x="0" y="0">BASELINE LOCK</tspan></text>
+  <text class="st6" transform="translate(348.8 445.9)"><tspan x="0" y="0">inspiron</tspan></text>
+  <text class="st7" transform="translate(817.8 445.9)"><tspan x="0" y="0">TECH</tspan></text>
+  <rect class="st2" x="348.8" y="385.9" width="450" height="60"/>
+  <text class="st9" transform="translate(348.8 380.9)"><tspan x="0" y="0">n-HEIGHT TARGET (Match Loop)</tspan></text>
+  <path class="st0" d=""/>
+</svg>
