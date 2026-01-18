@@ -45,7 +45,7 @@ These rules enforce the n-Law across all Technical and Business Operations.
 *   **Violation:** Rasterization (JPEG/PNG) is a violation of geometric integrity.
 
 ### RULE 03: NO SILICONE SOLUTIONS
-*   **Mandate:** We do not "buy" off-the-shelf software. We **ENGINEER** strategic systems tailored to specific ROI metrics.
+*   **Mandate:** We reject subscription-based dependency. Every implementation must be a **SOVEREIGN ASSET** owned by the client, built on open-source foundations with zero vendor lock-in.
 *   **Principle:** Consumption is weakness; Creation is strength.
 
 ### RULE 04: PERSISTENT AUDIT
