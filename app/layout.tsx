@@ -9,7 +9,11 @@ export const metadata: Metadata = {
     title: "INSPIRON TECH | Official Manager.io Partner Bangladesh",
     description: "Institutional Cloud Accounting & Business Automation for 100+ Crore Agro-Enterprises.",
     icons: {
-        icon: "/icon.png",
+        icon: [
+            { url: "/icon.svg", type: "image/svg+xml" },
+            { url: "/icon.png", type: "image/png" } // Fallback
+        ],
+        shortcut: "/icon.svg",
     },
 };
 
