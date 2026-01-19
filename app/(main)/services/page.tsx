@@ -74,21 +74,21 @@ export default function ServicesPage() {
     return (
         <div className="min-h-screen bg-[#010409] text-white selection:bg-aqua selection:text-navy font-sans">
 
-            {/* NAVIGATION NODE */}
-            <nav className="border-b border-white/5 py-6 px-10 flex justify-between items-center bg-black/50 backdrop-blur-xl sticky top-0 z-50">
-                <div className="w-32 md:w-40"><InspironLogo size={150} /></div>
-                <div className="flex gap-6 items-center">
-                    <Link href="/" className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-500 hover:text-white transition-all hidden md:block">
-                        Hub
+            {/* 1. INSTITUTIONAL HEADER */}
+            <header className="border-b border-white/10 py-10 px-10 sticky top-0 bg-[#010409]/90 backdrop-blur-xl z-50 flex justify-between items-center">
+                <div className="flex items-center gap-10">
+                    <Link href="/" className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-500 hover:text-white transition-all">
+                        ← RETURN TO BASE
                     </Link>
-                    <a
-                        href="https://wa.me/8801601618030"
-                        className="bg-aqua/10 border border-aqua/30 text-aqua text-[10px] font-black px-4 py-2 rounded uppercase tracking-widest hover:bg-aqua hover:text-navy transition-all"
-                    >
-                        Sentry Active
-                    </a>
+                    <span className="h-8 w-px bg-white/10"></span>
+                    {/* Standardized to V2026.02 Baseline */}
+                    <InspironLogo />
                 </div>
-            </nav>
+                <div className="hidden md:flex gap-12 text-[10px] font-bold uppercase tracking-[0.3em] opacity-60">
+                    <a href="#operations" className="hover:text-aqua transition-all text-white">Operations</a>
+                    <a href="#protocols" className="hover:text-aqua transition-all text-white">Protocols</a>
+                </div>
+            </header>
 
             {/* INSTITUTIONAL HERO */}
             <section className="py-24 px-10 relative overflow-hidden">
