@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import { InspironLogo } from '@/components/Branding/Logo';
+import { LeakageSentry } from '@/components/Sentry/LeakageSentry';
 
 const SERVICE_TIERS = [
     {
@@ -160,22 +161,22 @@ export default function ServicesPage() {
                 </div>
             </section>
 
-            {/* CONVERSION ANCHOR */}
+            {/* CONVERSION ANCHOR: THE LEAKAGE SENTRY */}
             <section className="py-32 px-10 text-center bg-gradient-to-t from-aqua/[0.02] to-transparent">
-                <div className="max-w-3xl mx-auto">
-                    <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-8 leading-tight">
-                        Beyond Standard <br /> <span className="text-aqua">Data Entry.</span>
-                    </h2>
-                    <p className="text-gray-500 mb-12 text-lg">
-                        If your operation exceeds BDT 100 Crore in annual turnover, standard bookkeeping is a risk.
-                        You require an engineering audit.
-                    </p>
-                    <Link
-                        href="/precision-audit"
-                        className="inline-flex items-center gap-4 text-white hover:text-aqua transition-colors font-black uppercase tracking-[0.3em] text-xs"
-                    >
-                        View Case Studies (Nobin Agro / STEP Group) <ArrowRight size={16} />
-                    </Link>
+                <div className="max-w-5xl mx-auto">
+                    <LeakageSentry />
+
+                    <div className="mt-16">
+                        <p className="text-gray-500 mb-8 text-lg font-medium">
+                            If your operation exceeds BDT 100 Crore in annual turnover, standard bookkeeping is a risk.
+                        </p>
+                        <Link
+                            href="/precision-audit"
+                            className="inline-flex items-center gap-4 text-white hover:text-aqua transition-colors font-black uppercase tracking-[0.3em] text-xs"
+                        >
+                            View Case Studies (Nobin Agro / STEP Group) <ArrowRight size={16} />
+                        </Link>
+                    </div>
                 </div>
             </section>
 
